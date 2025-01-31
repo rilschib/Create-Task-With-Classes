@@ -1,20 +1,47 @@
 import random
 import time
-from player_class import *
-from randomber import *
+class Player:
+    def __init__(wallet, name):
+        self.balance = balance
+        self.name = name
+fee = 10
+win = 15
+bigwin = 100
+grandprize = 777
+icons = ["A", "1", "!"]
+x = "1" or "!"
+y = "11" or "!!"
+z = "111" or "!!!"
+a = "AAAAA" or "!!!!!" or "11111"
+b = "11"
+c = "!!"
+d = "AA"
+e = "1"
+f = "!"
+g = "A"
+r = "["
+l = "]"
+n = "\n"
+machine = ("[",random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons),"]\n[",random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons),"]\n[",random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons), random.choice(icons),"]")
 print("What name should we put this under?")
 name = input()
-wallet = float(random.randrange(100, 10000, 1))
-while wallet > 9:
-    print(name, " has $",wallet," in their wallet. don't ask how we know this.")
-    print("winning prize is $", randomber.prizemoney, ", pick a number between 1 and 25, and if your number matches the random number, you win the prize money.")
-    time.sleep(2)
-    input("pick your number: ")
-    if input == winnumber:
-        print(f"you won! your prize is $",prizemoney)
-        if input == winnumber:
-             wallet += prizemoney
-    elif input is not winnumber:
-        print("you lost. you are out by $10")
-        wallet -= 10
-        time.sleep(2)
+balance = float(random.randrange(1000, 10000, 10))
+while True:
+    print(name, " your balance is $",balance,"and the grand prize is", grandprize, ". to roll, type roll.")
+    userin = input().strip().lower()
+    if userin == "roll":
+        balance -= float(fee)
+        print("roll the slots!")
+        print(machine)
+        if machine == ralnralnral:
+            print(f"Grand prize of $",grandprize," was won!")
+            balance += float(grandprize)
+        if machine == rdedlnrdedlnrdedl or redelnredenredel or rdfdlnrdfdlnrdfdl:
+            print(f"big sized win of $",bigwin," was won!")
+            balance += float(bigwin)
+        if machine == rbxblnrbxblnrbxbl or rcxclnrcxclnrcxcl or refxfelnrefxelnrefxel:
+            print(f"win get! won $", win, "!")
+        else:
+            print("loser.")
+else:
+    print("dumbo")
