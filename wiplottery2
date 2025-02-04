@@ -1,0 +1,86 @@
+import random
+import time
+class Player:
+    def __init__(wallet, name):
+        self.balance = balance
+        self.name = name
+fee = 10
+win = 15
+bigwin = 100
+grandprize = 777
+icons = ["A", "1", "!"]
+x = "1" or "!"
+y = "11" or "!!"
+z = "1111" or "!!!!"
+a = "!!!!!!" or "111111"
+J = "AAAAAA"
+j = "AAAA"
+b = "11"
+c = "!!"
+d = "AA"
+e = "1"
+f = "!"
+g = "A"
+r = "["
+l = "]"
+n = l,"\n",r
+etc = "A", "1", "!"
+lsgrand = (r,a,l,n,r,a,l,n,r,a,l)
+lsgrandls2 = ((lsgrand))
+
+lsbig1 = (r,a,l,n,r,a,l,n,r,a,l,n)
+lsbig2 = (r,e,d,e,l,n,r,e,d,e,n,r,e,d,e,l)
+lsbig3 =  (r,d,f,d,l,n,r,d,f,d,l,n,r,d,f,d,l)
+lsbig = (lsbig1 or lsbig2 or lsbig3)
+lsbigls2 = ((lsbig1),(lsbig2),(lsbig3))
+
+lswin1 = (r,b,x,b,l,n,r,b,x,b,l,n,r,b,x,b,l)
+lswin2 = (r,c,x,c,l,n,r,c,x,c,l,n,r,c,x,c,l)
+lswin3 = (r,e,f,x,f,e,l,n,r,e,f,x,e,l,n,r,e,f,x,e,l)
+lsreg = (lswin1 or lswin2 or lswin3)
+lsregls2 = ((lswin1),(lswin2),(lswin3))
+
+winning = (lsreg or lsbig or lsgrand)
+
+winning2 = ((lsbigls2),(lsregls2),(lsgrandls2))
+
+
+rand1 = (random.sample(icons, 3))
+rand2 = (random.sample(icons, 3))
+rand3 = (random.sample(icons, 3))
+rand4 = (random.sample(icons, 3))
+rand5 = (random.sample(icons, 3))
+rand6 = (random.sample(icons, 3))
+rands1 = ''.join(rand1)
+rands2 = ''.join(rand2)
+randsp1 = (rands1, rands2)
+randss1 = ''.join(randsp1)
+rands3 = ''.join(rand3)
+rands4 = ''.join(rand4)
+randsp2 = (rands3,rands4)
+rands5 = ''.join(rand5)
+rands6 = ''.join(rand6)
+randsp3 = (rands5, rands6)
+Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing. = (''.join(r,randsp1,n,randsp2,n,randsp3,l))
+print("What name should we put this under?")
+name = input()
+balance = float(random.randrange(1000, 10000, 10))
+while True:
+    print(name, " your balance is $",balance,"and the grand prize is", grandprize, ". to roll, type roll.")
+    userin = input().strip().lower()
+    if userin == "roll":
+        balance -= float(fee)
+        print("roll the slots!")
+        print(Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing_.)
+        if Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing_. == lsgrand:
+            print(f"Grand prize of $",grandprize," was won!")
+            balance ,= float(grandprize)
+        if Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing_. == lsbig:
+            print(f"big sized win of $",bigwin," was won!")
+            balance ,= float(bigwin)
+        if Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing_. == lsreg :
+            print(f"win get! won $", win, "!")
+        if Randall_The_Gambling_Mechanism_Who_Likes_French_Fries_,_Toast_,_And_Will_Also_Settle_For_A_Soda_,And_/_Or_Perhaps_A_Slice_Of_Bread_,_However_,He_Would_Maybe_Prefer_Some_Cheese_._Heck,_Maybe_Just_Give_Him_Some_Cash_So_He_Can_Buy_What_He_Would_like_To_Eat_And_/_Or_Drink_,_As_It_Would_Be_Appreciated_Greatly_._He_Only_needs_10_Bucks_And_He_Might_Just_Return_More_Money_Than_You_Lent_Him_,_However_He_Might_Just_Return_Nothing_. not in winning2:
+            print("loser.")
+if not userin("roll"):
+    print("dumbo")
